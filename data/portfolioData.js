@@ -12,8 +12,8 @@ export const portfolioData = {
     heroMarquee: "FIRAWAN LUTHFY M RAFIQ • FRONT-END WEB DEVELOPER • AMIKOM YOGYAKARTA • ",
     stats: [
       { label: "Studi Utama", value: "Amikom" },
-      { label: "Proyek Dituntaskan", value: "2+" },
-      { label: "Sertifikasi IBM", value: "4" },
+      { label: "Proyek Dituntaskan", value: "3+" },
+      { label: "Sertifikasi", value: "6" },
       { label: "Spesialisasi", value: "Laravel & NestJS" },
     ],
     interests: ["Web Development", "Front-end Architecture", "PHP & NestJS Ecosystem"],
@@ -83,12 +83,26 @@ export const portfolioData = {
 
   projects: [
     {
+      id: "chatbot-ai-sederhana",
+      name: "Chatbot AI Sederhana",
+      category: "Fullstack Web App",
+      image: "/images/projects/chatbot-ai-thumbnail.png",
+      shortDesc: "Chatbot cerdas berbasis AI yang dirancang khusus sebagai asisten interaktif untuk membantu pengguna belajar pemrograman, melakukan pemecahan masalah (troubleshooting) kode, dan meningkatkan produktivitas harian.",
+      fullDesc: "Chatbot cerdas berbasis AI yang dirancang khusus sebagai asisten interaktif untuk membantu pengguna belajar pemrograman, melakukan pemecahan masalah (troubleshooting) kode, dan meningkatkan produktivitas harian.",
+      thumbnailColor: "from-blue-900/80 to-black",
+      tags: ["Node.js", "Express.js", "Gemini API", "HTML/CSS", "Vanilla JS"],
+      liveUrl: "https://chatbotaifirawan.vercel.app/",
+      githubUrl: "https://github.com/firawan22/AI-API-INTEGRATIONS",
+      featured: true,
+      stats: { backend: "Node.js & Express", ai: "Google Gemini API" },
+    },
+    {
       id: "mvp-university-talent-hub",
       name: "MVP University Talent Hub",
       category: "Fullstack Web App",
       image: "/images/projects/talenthub-thumbnail.png",
       shortDesc: "Platform web interaktif memetakan, memverifikasi, dan mengembangkan portofolio mahasiswa dengan fitur gamifikasi & poin reward.",
-      fullDesc: "TalentHub adalah sebuah platform web interaktif yang dirancang untuk memetakan, memverifikasi, dan mengembangkan portofolio mahasiswa. Aplikasi ini menggunakan sistem berbasis peran (role-based) yang menghubungkan mahasiswa dengan administrator. Mahasiswa dapat membangun profil profesional meereka dengan mengunggah bukti proyek atau sertifikat, yang kemudian akan divalidasi oleh admin. Platform ini juga menerapkan sistem gamifikasi, di mana mahasiswa akan mendapatkan poin (rewards) untuk setiap pencapaian yang disetujui.",
+      fullDesc: "TalentHub adalah sebuah platform web interaktif yang dirancang untuk memetakan, memverifikasi, dan mengembangkan portofolio mahasiswa. Aplikasi ini menggunakan sistem berbasis peran (role-based) yang menghubungkan mahasiswa dengan administrator. Mahasiswa dapat membangun profil profesional meereka dengan mengunggah bukti proyek atau sertifikat, yang kemudian akan divalidasi oleh admin. Platform ini juga menerapkan sistem gamifikasi, di mana mahasiswa akan mendapatkan poin (rewards) meereka untuk setiap pencapaian yang disetujui.",
       thumbnailColor: "from-blue-900/80 to-black",
       tags: ["Laravel", "NestJS", "PHP", "MySQL", "Docker", "Docker Compose"],
       liveUrl: "https://github.com/firawan22/MVP-University-Talent-Hub",
@@ -113,6 +127,24 @@ export const portfolioData = {
   ],
 
   certifications: [
+    {
+      title: "Dasar Pemrograman JavaScript",
+      issuer: "Dicoding",
+      date: "August 2, 2026",
+      image: "/images/certifications/dicoding-dasar-pemrograman-javascript.png",
+      credentialId: "DICODING-JS-2026",
+      verifyUrl: "https://www.dicoding.com",
+      badgeType: "JavaScript",
+    },
+    {
+      title: "Introduction to Financial Literacy",
+      issuer: "Dicoding",
+      date: "August 4, 2026",
+      image: "/images/certifications/dicoding-introduction-to-financial-literacy.png",
+      credentialId: "DICODING-FIN-2026",
+      verifyUrl: "https://www.dicoding.com",
+      badgeType: "Financial Literacy",
+    },
     {
       title: "Build an AI Agent",
       issuer: "IBM",
