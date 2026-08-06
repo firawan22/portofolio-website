@@ -44,25 +44,25 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-dark/85 backdrop-blur-md border-b border-dark-border py-4 shadow-xl shadow-black/50"
-          : "bg-transparent py-6"
+          ? "bg-dark/90 backdrop-blur-md border-b border-dark-border py-3 sm:py-4 shadow-xl shadow-black/50"
+          : "bg-transparent py-4 sm:py-6"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between">
         {/* Left: Agency Logo */}
-        <Link href="#home" className="group flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-blue-400 font-mono font-bold text-sm group-hover:bg-blue-600 group-hover:text-white transition-all shadow-[0_0_15px_rgba(37,99,235,0.3)]">
+        <Link href="#home" className="group flex items-center gap-2.5">
+          <div className="w-8 h-8 rounded-lg bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-blue-400 font-mono font-bold text-xs sm:text-sm group-hover:bg-blue-600 group-hover:text-white transition-all shadow-[0_0_15px_rgba(37,99,235,0.3)] shrink-0">
             FL
           </div>
-          <span className="font-bold tracking-tight text-lg text-white group-hover:text-blue-400 transition-colors">
+          <span className="font-bold tracking-tight text-sm sm:text-base md:text-lg text-white group-hover:text-blue-400 transition-colors whitespace-nowrap">
             FIRAWAN RAFIQ<span className="text-blue-500 font-extrabold ml-0.5">.</span>
           </span>
         </Link>
 
         {/* Right: Desktop Nav Links */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
           {NAV_LINKS.map((link) => {
             const isActive = activeSection === link.href.substring(1);
             return (
@@ -92,7 +92,7 @@ export default function Navbar() {
           {/* Quick CTA Button */}
           <Link
             href="#contact"
-            className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-500 rounded-full transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_30px_rgba(59,130,246,0.6)]"
+            className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-500 rounded-full transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] min-h-[40px]"
           >
             <span>Let&apos;s Talk</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -102,7 +102,7 @@ export default function Navbar() {
         {/* Mobile Hamburger Toggle */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 text-white hover:text-blue-400 transition-colors"
+          className="lg:hidden min-w-[44px] min-h-[44px] p-2 flex items-center justify-center text-white hover:text-blue-400 transition-colors focus:outline-none"
           aria-label="Toggle Navigation Menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -112,39 +112,49 @@ export default function Navbar() {
       {/* Mobile Drawer Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-dark-card border-b border-dark-border px-6 py-6 shadow-2xl"
-          >
-            <div className="flex flex-col gap-4">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`text-base font-medium transition-colors py-2 border-b border-white/5 flex items-center justify-between ${
-                    activeSection === link.href.substring(1)
-                      ? "text-blue-400 font-semibold pl-2 border-l-2 border-blue-500"
-                      : "text-muted hover:text-white"
-                  }`}
-                >
-                  <span>{link.name}</span>
-                  <ArrowUpRight className="w-4 h-4 text-blue-500 opacity-60" />
-                </Link>
-              ))}
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setMobileMenuOpen(false)}
+              className="lg:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40"
+            />
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              className="lg:hidden relative z-50 bg-dark-card/95 backdrop-blur-xl border-b border-dark-border px-6 py-6 shadow-2xl overflow-hidden"
+            >
+              <div className="flex flex-col gap-2">
+                {NAV_LINKS.map((link) => (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`text-base font-medium transition-colors py-3 px-3 min-h-[44px] rounded-lg border-b border-white/5 flex items-center justify-between ${
+                      activeSection === link.href.substring(1)
+                        ? "text-blue-400 font-semibold bg-blue-600/10 border-l-4 border-blue-500"
+                        : "text-muted hover:text-white hover:bg-white/5"
+                    }`}
+                  >
+                    <span>{link.name}</span>
+                    <ArrowUpRight className="w-4 h-4 text-blue-500 opacity-80" />
+                  </Link>
+                ))}
 
-              <Link
-                href="#contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className="mt-2 text-center py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm rounded-lg shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2"
-              >
-                <Sparkles className="w-4 h-4" />
-                <span>Start the Project</span>
-              </Link>
-            </div>
-          </motion.div>
+                <Link
+                  href="#contact"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="mt-4 text-center py-3.5 px-4 min-h-[48px] bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm rounded-xl shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2 uppercase tracking-wider"
+                >
+                  <Sparkles className="w-4 h-4" />
+                  <span>Start the Project</span>
+                </Link>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>
