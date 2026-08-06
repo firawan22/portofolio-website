@@ -50,7 +50,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-muted text-sm max-w-sm leading-relaxed">
-              Front-end Web Developer & Web Developer Enthusiast • D3 Teknik Informatika Universitas Amikom Yogyakarta.
+              Web Developer Enthusiast & AI Tooling Enthusiast • D3 Teknik Informatika Universitas Amikom Yogyakarta.
             </p>
 
             {/* Live Clock Badge */}

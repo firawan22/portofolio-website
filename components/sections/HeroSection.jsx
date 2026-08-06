@@ -53,7 +53,7 @@ export default function HeroSection() {
             <span className="inline-flex items-center align-middle mx-1 sm:mx-2 md:mx-3 px-2.5 py-1 sm:px-3 sm:py-1 md:px-5 md:py-2 rounded-xl sm:rounded-2xl bg-dark-card border border-blue-500/40 text-blue-400 shadow-[0_0_30px_rgba(37,99,235,0.3)] rotate-[-1deg] hover:rotate-0 transition-transform">
               <span className="font-mono text-[11px] sm:text-xs md:text-sm font-semibold tracking-wider uppercase text-blue-400 flex items-center gap-1.5 sm:gap-2">
                 <Code2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-blue-500 animate-pulse" />
-                <span>Front-end</span>
+                <span>Web Developer</span>
               </span>
             </span>{" "}
             Luthfiy M Rafiq<span className="text-blue-500">.</span>
@@ -113,7 +113,7 @@ export default function HeroSection() {
             </div>
             <div className="text-xs space-y-0.5">
               <p className="text-white font-mono font-bold text-xs sm:text-sm">FIRAWAN LUTHFY M RAFIQ</p>
-              <p className="text-muted font-mono text-[10px] sm:text-[11px]">Front-end Developer</p>
+              <p className="text-muted font-mono text-[10px] sm:text-[11px]">Web Developer & AI Tooling Enthusiast</p>
             </div>
           </div>
         </motion.div>

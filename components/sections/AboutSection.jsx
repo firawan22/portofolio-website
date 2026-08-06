@@ -61,7 +61,7 @@ export default function AboutSection() {
           <div className="lg:col-span-8 flex flex-col justify-between p-6 sm:p-8 bg-dark-card border border-dark-border rounded-2xl space-y-6 shadow-xl">
             <div className="space-y-4">
               <p className="text-lg sm:text-xl text-white font-medium leading-relaxed">
-                Halo! Saya <span className="text-blue-400 font-semibold">{portfolioData.personal.name}</span>, seorang Front-end Web Developer dan Web Developer Enthusiast yang menempuh studi D3 Teknik Informatika di Universitas Amikom Yogyakarta.
+                Halo! Saya <span className="text-blue-400 font-semibold">{portfolioData.personal.name}</span>, seorang Web Developer Enthusiast dan AI Tooling Enthusiast yang menempuh studi D3 Teknik Informatika di Universitas Amikom Yogyakarta.
               </p>
               <p className="text-muted leading-relaxed text-sm sm:text-base">
                 {portfolioData.personal.bio}

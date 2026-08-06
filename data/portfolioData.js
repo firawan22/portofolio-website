@@ -1,15 +1,15 @@
 export const portfolioData = {
   personal: {
     name: "Firawan Luthfiy M Rafiq",
-    title: "Front-end Web Developer | Web Developer Enthusiast",
-    tagline: "Halo! Saya adalah seorang Front-end Web Developer dan Web Developer Enthusiast. Saat ini, saya sedang menempuh studi D3 Teknik Informatika di Universitas Amikom Yogyakarta.",
+    title: "Web Developer Enthusiast | AI Tooling Enthusiast",
+    tagline: "Halo! Saya adalah seorang Web Developer Enthusiast dan AI Tooling Enthusiast. Saat ini, saya sedang menempuh studi D3 Teknik Informatika di Universitas Amikom Yogyakarta.",
     email: "firawanrafik@gmail.com",
     profilePhoto: "/images/profile/foto-profil.png",
     location: "Yogyakarta, Indonesia",
     status: "D3 Teknik Informatika — Universitas Amikom Yogyakarta",
-    bio: "Fokus utama saya adalah membangun antarmuka web yang interaktif, responsif, dan user-friendly, sekaligus memastikan arsitektur sistem pendukungnya terstruktur dengan baik. Dalam proses pengembangan, saya memiliki pengalaman merancang dan mengimplementasikan aplikasi web menggunakan ekosistem PHP, khususnya dengan framework Laravel, serta NestJS. Saya selalu antusias mengeksplorasi cara untuk membuat pengalaman pengguna menjadi lebih mulus dari sisi front-end.",
-    motto: "FIRAWAN LUTHFY M RAFIQ • FRONT-END WEB DEVELOPER • WEB DEVELOPER ENTHUSIAST • ",
-    heroMarquee: "FIRAWAN LUTHFY M RAFIQ • FRONT-END WEB DEVELOPER • AMIKOM YOGYAKARTA • ",
+    bio: "Fokus utama saya adalah membangun antarmuka web yang interaktif, responsif, dan user-friendly, sekaligus memastikan arsitektur sistem pendukungnya terstruktur dengan baik. Dalam proses pengembangan, saya memiliki pengalaman merancang dan mengimplementasikan aplikasi web menggunakan ekosistem PHP, khususnya dengan framework Laravel, serta NestJS. Belakangan ini, saya juga semakin tertarik mengeksplorasi dan mengintegrasikan berbagai AI tooling ke dalam proyek yang saya kembangkan — mulai dari membangun chatbot berbasis AI hingga memanfaatkan tools AI untuk mempercepat proses development. Saya selalu antusias mengeksplorasi cara untuk membuat pengalaman pengguna menjadi lebih mulus dari sisi front-end, sambil terus belajar bagaimana teknologi AI dapat memperkaya cara kita membangun aplikasi web.",
+    motto: "FIRAWAN LUTHFY M RAFIQ • WEB DEVELOPER ENTHUSIAST • AI TOOLING ENTHUSIAST • ",
+    heroMarquee: "FIRAWAN LUTHFY M RAFIQ • WEB DEVELOPER ENTHUSIAST • AI TOOLING ENTHUSIAST • AMIKOM YOGYAKARTA • ",
     stats: [
       { label: "Studi Utama", value: "Amikom" },
       { label: "Proyek Dituntaskan", value: "3+" },
