@@ -86,7 +86,7 @@ export const portfolioData = {
       id: "catatan-pengeluaran-harian",
       name: "Catatan Pengeluaran Harian (Expense & Budget Visualizer)",
       category: "Frontend Web App",
-      image: "/images/projects/catatan-pengeluaran-harian.png",
+      image: "/images/projects/catatan-pengeluaran-harian-thumbnail.png",
       shortDesc: "Website pencatatan keuangan pribadi berdesain antarmuka modern yang dikembangkan saat mengikuti coding camp di RevoU menggunakan workspace Kiro.",
       fullDesc: "Expense & Budget Visualizer adalah website pencatatan keuangan pribadi berdesain antarmuka modern yang dikembangkan saat mengikuti coding camp di RevoU menggunakan workspace Kiro. Website ini berfokus pada kemudahan pencatatan dan pengelolaan pengeluaran harian pengguna melalui formulir transaksi yang intuitif untuk mendata nama item, nominal, tanggal, dan kategori. Selain menampilkan ringkasan akumulasi total pengeluaran secara real-time pada banner utamanya, website ini juga menyediakan panel khusus untuk visualisasi distribusi pengeluaran, daftar riwayat transaksi dengan opsi penghapusan data, serta dukungan peralihan tema gelap-terang (dark/light mode).",
       thumbnailColor: "from-blue-900/80 to-black",

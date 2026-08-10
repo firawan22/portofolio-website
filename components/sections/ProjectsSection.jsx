@@ -174,11 +174,20 @@ export default function ProjectsSection() {
             >
               {/* Modal Header */}
               <div
-                className={`p-6 sm:p-8 bg-gradient-to-br ${selectedProject.thumbnailColor} border-b border-dark-border relative space-y-3 sm:space-y-4 shrink-0`}
+                className={`p-6 sm:p-8 bg-gradient-to-br ${selectedProject.thumbnailColor} border-b border-dark-border relative space-y-3 sm:space-y-4 shrink-0 overflow-hidden`}
               >
+                {selectedProject.image && (
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.name}
+                    className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-card via-black/60 to-transparent pointer-events-none" />
+
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="absolute top-4 right-4 sm:top-6 sm:right-6 p-2 rounded-full bg-black/50 hover:bg-blue-600 text-white transition-colors border border-white/10"
+                  className="absolute top-4 right-4 sm:top-6 sm:right-6 z-10 p-2 rounded-full bg-black/50 hover:bg-blue-600 text-white transition-colors border border-white/10"
                 >
                   <X className="w-5 h-5" />
                 </button>
