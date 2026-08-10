@@ -233,6 +233,13 @@ export const portfolioData = {
       category: "AI & Web Dev",
     },
     {
+      year: "August 3, 2026",
+      title: "Built \"Catatan Pengeluaran Harian\" (Expense & Budget Visualizer)",
+      description: "Built \"Catatan Pengeluaran Harian\" (Expense & Budget Visualizer) during a coding camp at RevoU using Kiro workspace — a personal finance tracker with real-time expense summary, spending visualization, transaction history, and dark/light mode support, built with HTML5, CSS3, and Vanilla JavaScript.",
+      metric: "RevoU Coding Camp",
+      category: "Frontend Development",
+    },
+    {
       year: "August 2, 2026",
       title: "Dicoding: Dasar Pemrograman JavaScript",
       description: "Completed Dicoding certification: \"Dasar Pemrograman JavaScript\".",
