@@ -12,7 +12,7 @@ export const portfolioData = {
     heroMarquee: "FIRAWAN LUTHFY M RAFIQ • WEB DEVELOPER ENTHUSIAST • AI TOOLING ENTHUSIAST • AMIKOM YOGYAKARTA • ",
     stats: [
       { label: "Studi Utama", value: "Amikom" },
-      { label: "Proyek Dituntaskan", value: "3+" },
+      { label: "Proyek Dituntaskan", value: "4+" },
       { label: "Sertifikasi", value: "6" },
       { label: "Spesialisasi", value: "Laravel & NestJS" },
     ],
@@ -82,6 +82,20 @@ export const portfolioData = {
   experience: [],
 
   projects: [
+    {
+      id: "catatan-pengeluaran-harian",
+      name: "Catatan Pengeluaran Harian (Expense & Budget Visualizer)",
+      category: "Frontend Web App",
+      image: "/images/projects/catatan-pengeluaran-harian.png",
+      shortDesc: "Website pencatatan keuangan pribadi berdesain antarmuka modern yang dikembangkan saat mengikuti coding camp di RevoU menggunakan workspace Kiro.",
+      fullDesc: "Expense & Budget Visualizer adalah website pencatatan keuangan pribadi berdesain antarmuka modern yang dikembangkan saat mengikuti coding camp di RevoU menggunakan workspace Kiro. Website ini berfokus pada kemudahan pencatatan dan pengelolaan pengeluaran harian pengguna melalui formulir transaksi yang intuitif untuk mendata nama item, nominal, tanggal, dan kategori. Selain menampilkan ringkasan akumulasi total pengeluaran secara real-time pada banner utamanya, website ini juga menyediakan panel khusus untuk visualisasi distribusi pengeluaran, daftar riwayat transaksi dengan opsi penghapusan data, serta dukungan peralihan tema gelap-terang (dark/light mode).",
+      thumbnailColor: "from-blue-900/80 to-black",
+      tags: ["HTML5", "CSS3", "Vanilla JavaScript"],
+      liveUrl: "https://firawan22.github.io/CodingCamp-3August26-Firawan-Luthfiy-M-Rafiq/",
+      githubUrl: "https://github.com/firawan22/CodingCamp-3August26-Firawan-Luthfiy-M-Rafiq",
+      featured: true,
+      stats: { workspace: "Kiro (RevoU)", features: "Real-time & Dark/Light Mode" },
+    },
     {
       id: "chatbot-ai-sederhana",
       name: "Chatbot AI Sederhana",

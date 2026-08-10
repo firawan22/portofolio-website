@@ -13,7 +13,7 @@ export default function ProjectsSection() {
 
   const filteredProjects = filter === "All"
     ? portfolioData.projects
-    : portfolioData.projects.filter((p) => p.category === filter);
+    : portfolioData.projects.filter((p) => p.category === filter || p.category.includes(filter));
 
   return (
     <section id="projects" className="relative py-20 sm:py-28 bg-dark-pure border-b border-dark-border">
