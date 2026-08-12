@@ -22,7 +22,7 @@ export default function CertificationsSection() {
             </h2>
           </div>
           <p className="text-muted text-sm sm:text-base max-w-md">
-            Industry-recognized certifications from IBM and Dicoding in AI Development, JavaScript Programming, and Software Engineering.
+            Industry-recognized certifications from IBM, Dicoding, and RevoU in AI Development, Web Development, and Software Engineering.
           </p>
         </div>
 

@@ -13,7 +13,7 @@ export const portfolioData = {
     stats: [
       { label: "Studi Utama", value: "Amikom" },
       { label: "Proyek Dituntaskan", value: "4+" },
-      { label: "Sertifikasi", value: "6" },
+      { label: "Sertifikasi", value: "8" },
       { label: "Spesialisasi", value: "Laravel & NestJS" },
     ],
     interests: ["Web Development", "Front-end Architecture", "PHP & NestJS Ecosystem"],
@@ -142,6 +142,24 @@ export const portfolioData = {
 
   certifications: [
     {
+      title: "Belajar Dasar Pemrograman Web",
+      issuer: "Dicoding",
+      date: "August 12, 2026",
+      image: "/images/certifications/dicoding-belajar-dasar-pemrograman-web.png",
+      credentialId: "DICODING-WEB-2026",
+      verifyUrl: "https://www.dicoding.com",
+      badgeType: "Web Development",
+    },
+    {
+      title: "Intro to Software Engineering",
+      issuer: "RevoU",
+      date: "August 7, 2026",
+      image: "/images/certifications/revou-intro-to-software-engineering.png",
+      credentialId: "REVOU-SE-2026",
+      verifyUrl: "https://revou.co",
+      badgeType: "Software Engineering",
+    },
+    {
       title: "Dasar Pemrograman JavaScript",
       issuer: "Dicoding",
       date: "August 2, 2026",
@@ -251,6 +269,20 @@ export const portfolioData = {
       title: "Dicoding: Introduction to Financial Literacy",
       description: "Completed Dicoding certification: \"Introduction to Financial Literacy\".",
       metric: "Financial Literacy Certified",
+      category: "Certification",
+    },
+    {
+      year: "August 7, 2026",
+      title: "RevoU: Intro to Software Engineering",
+      description: "Completed RevoU certification: \"Intro to Software Engineering\".",
+      metric: "Software Engineering Certified",
+      category: "Certification",
+    },
+    {
+      year: "August 12, 2026",
+      title: "Dicoding: Belajar Dasar Pemrograman Web",
+      description: "Completed Dicoding certification: \"Belajar Dasar Pemrograman Web\".",
+      metric: "Web Dev Certified",
       category: "Certification",
     },
   ],
