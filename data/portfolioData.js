@@ -13,7 +13,7 @@ export const portfolioData = {
     stats: [
       { label: "Studi Utama", value: "Amikom" },
       { label: "Proyek Dituntaskan", value: "4+" },
-      { label: "Sertifikasi", value: "8" },
+      { label: "Sertifikasi", value: "9" },
       { label: "Spesialisasi", value: "Laravel & NestJS" },
     ],
     interests: ["Web Development", "Front-end Architecture", "PHP & NestJS Ecosystem"],
@@ -151,6 +151,15 @@ export const portfolioData = {
       badgeType: "Web Development",
     },
     {
+      title: "AI Productivity and AI API Integration for Developers",
+      issuer: "Hacktiv8 Indonesia",
+      date: "August 9, 2026",
+      image: "/images/certifications/hacktiv8-ai-productivity-api-integration.png",
+      credentialId: "HACKTIV8-AI-2026",
+      verifyUrl: "https://hacktiv8.com",
+      badgeType: "AI & API Integration",
+    },
+    {
       title: "Intro to Software Engineering",
       issuer: "RevoU",
       date: "August 7, 2026",
@@ -251,18 +260,18 @@ export const portfolioData = {
       category: "AI & Web Dev",
     },
     {
-      year: "August 3, 2026",
-      title: "Built \"Catatan Pengeluaran Harian\" (Expense & Budget Visualizer)",
-      description: "Built \"Catatan Pengeluaran Harian\" (Expense & Budget Visualizer) during a coding camp at RevoU using Kiro workspace — a personal finance tracker with real-time expense summary, spending visualization, transaction history, and dark/light mode support, built with HTML5, CSS3, and Vanilla JavaScript.",
-      metric: "RevoU Coding Camp",
-      category: "Frontend Development",
-    },
-    {
       year: "August 2, 2026",
       title: "Dicoding: Dasar Pemrograman JavaScript",
       description: "Completed Dicoding certification: \"Dasar Pemrograman JavaScript\".",
       metric: "JavaScript Certified",
       category: "Certification",
+    },
+    {
+      year: "August 3, 2026",
+      title: "Built \"Catatan Pengeluaran Harian\" (Expense & Budget Visualizer)",
+      description: "Built \"Catatan Pengeluaran Harian\" (Expense & Budget Visualizer) during a coding camp at RevoU using Kiro workspace — a personal finance tracker with real-time expense summary, spending visualization, transaction history, and dark/light mode support, built with HTML5, CSS3, and Vanilla JavaScript.",
+      metric: "RevoU Coding Camp",
+      category: "Frontend Development",
     },
     {
       year: "August 4, 2026",
@@ -277,6 +286,13 @@ export const portfolioData = {
       description: "Completed RevoU certification: \"Intro to Software Engineering\".",
       metric: "Software Engineering Certified",
       category: "Certification",
+    },
+    {
+      year: "August 9, 2026",
+      title: "Hacktiv8: AI Productivity and AI API Integration for Developers",
+      description: "Completed \"AI Productivity and AI API Integration for Developers\" certification from Hacktiv8 Indonesia (10 hours training, July 27 - August 5, 2026).",
+      metric: "AI & API Certified",
+      category: "Certification & AI",
     },
     {
       year: "August 12, 2026",
