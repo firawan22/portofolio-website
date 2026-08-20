@@ -13,7 +13,7 @@ export const portfolioData = {
     stats: [
       { label: "Studi Utama", value: "Amikom" },
       { label: "Proyek Dituntaskan", value: "4+" },
-      { label: "Sertifikasi", value: "9" },
+      { label: "Sertifikasi", value: "10" },
       { label: "Spesialisasi", value: "Laravel & NestJS" },
     ],
     interests: ["Web Development", "Front-end Architecture", "PHP & NestJS Ecosystem"],
@@ -148,6 +148,15 @@ export const portfolioData = {
       image: "/images/certifications/dicoding-belajar-dasar-pemrograman-web.png",
       credentialId: "DICODING-WEB-2026",
       verifyUrl: "https://www.dicoding.com",
+      badgeType: "Web Development",
+    },
+    {
+      title: "Website Development: Back End",
+      issuer: "MySkill",
+      date: "August 11, 2026",
+      image: "/images/certifications/myskill-website-development-backend.png",
+      credentialId: "MYSKILL-BACKEND-2026",
+      verifyUrl: "https://myskill.id",
       badgeType: "Web Development",
     },
     {
@@ -293,6 +302,13 @@ export const portfolioData = {
       description: "Completed \"AI Productivity and AI API Integration for Developers\" certification from Hacktiv8 Indonesia (10 hours training, July 27 - August 5, 2026).",
       metric: "AI & API Certified",
       category: "Certification & AI",
+    },
+    {
+      year: "August 11, 2026",
+      title: "MySkill: Website Development: Back End",
+      description: "Completed \"Website Development: Back End\" certification from MySkill.",
+      metric: "Backend Certified",
+      category: "Certification",
     },
     {
       year: "August 12, 2026",
